@@ -1,0 +1,450 @@
+html{
+
+    background-color: #F3F5FC;
+    
+}
+
+.logo{
+    
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    padding : 40px 0 0 20px
+    
+}
+
+.logo img{
+
+    width: 80px;
+}
+
+.entrada{
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 100px;
+    top: 168px;
+}
+
+.entrada textarea{
+
+    display: inline-block;
+    background: #F3F5FC;
+    font-style: normal;
+    font-family: 'Inter';
+    font-weight: 400px;
+    font-size: 25px;
+    line-height: 25px;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: left;
+    scrollbar-width: none;
+}
+
+::placeholder{
+
+    color: #0A3871;
+    opacity: 100%;
+    letter-spacing: 0.5px;
+
+} 
+
+.salida{
+
+    overflow: scroll;
+    scrollbar-width : none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    word-wrap: break-word;
+    position: absolute;
+    width: 280px;
+    height: 550px;
+    max-height: 650px;
+    left: 730px;
+    top: 30px;
+    border-radius: 32px;
+    background-color:rgb(255, 255, 255);
+   
+    
+    
+
+}
+
+#muneco{
+
+    position: relative;
+    top: 150px;
+    width: 220px;
+    height: 200px;
+    left: 40px;
+}
+
+#texto1{
+
+    width: 255px;
+    height: 10%;
+    font-family:'Inter';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #343A40;
+    position: relative;
+    top: 140px;
+    left: 5px;
+    right: 30px;
+     
+    
+}
+
+#texto2{
+
+    width: 255px;
+    height: 10%;
+    font-family:'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    position: relative;
+    top: 130px;
+    left: 5px;
+    right: 30px;
+    transform: translate(0,10px);
+}
+
+#resultado{
+
+    width: 240px;
+    height: 10%;
+    font-family:'Inter';
+    font-weight: 900;
+    font-size: 18px;
+    color: #343A40;
+    line-height: 20px;
+    padding: 5px;
+    position: static;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    
+
+}
+
+.botonesyerror{
+
+    transform: translate(100px,550px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position:absolute;
+    width: 520px;
+    height: 120px;
+    
+}
+
+h4{
+
+width: 300px;
+
+
+} 
+h4 img{
+
+    width: 10px;
+    height: 10px;
+    transform: translate(20px,7px);
+    
+}
+
+#error{
+
+    width: 300px;
+    height: 20px;
+    transform: translate(35px, -5px);
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 10px;
+    color: #616970;
+    opacity:0.8;
+    letter-spacing: normal;
+    left: 0px;
+    margin-bottom: 0px;
+}
+
+.Encriptar {
+   
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    background: #0A3871;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    font-size: 15px;
+    font-family: 'Inter';
+    color: white;
+    position:absolute;
+    left: 0px;
+     
+}
+
+.Encriptar:hover{
+
+    background: #052e63;
+
+  
+}
+
+.Encriptar:active {
+
+  background-color: #052e63;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+.Desencriptar {
+   
+    margin-top: 10px;
+    left: 250px;
+    margin-bottom: 40px;
+    gap: 8px;
+    width: 250px;
+    height: 50px;
+    background:#F3F5FC;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #0a4da0;
+    font-size: 15px;
+    font-family: 'Inter';
+    color: #0a4da0;
+    margin-left: 20px;
+    position: absolute;
+}
+.Desencriptar:hover{
+    background: #D8DFE8;
+
+  
+}
+.Desencriptar:active {
+  background-color:  #D8DFE8;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+
+#copiar{
+    
+    display: none;
+    position: absolute;
+    transform: translate(630px,-310px);
+    top: 380px;
+    left: 15px;
+    width: 250px;
+    height: 50px;
+    background:#F3F5FC;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #0a4da0;
+    font-size: 15px;
+    font-family: 'Inter';
+    color: #0f4da0;
+    
+
+}
+
+#copiar:hover{
+
+    background:#D8DFE8;
+
+  
+}
+
+#copiar:active {
+
+  background-color:#D8DFE8;
+  box-shadow: 0 2px #666;
+  
+}
+
+footer{
+
+    display: initial;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    transform: translate(0,700px);
+    background: url(imagenes/fondo-papel-reciclado-azul.jpg);
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+#brian{
+
+    position: relative;
+    font-family:'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+   
+
+}
+a img{
+    
+    max-height: 100%;
+    max-width: 100%;  
+    object-fit: contain;
+    
+}
+
+#linkedin{
+
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    bottom: 19px;
+
+
+}
+
+#github{
+
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+@media screen and (max-width:480px) {
+
+    
+    main{
+        align-items: center;
+    }
+    .logo{
+        padding: 20px 0 0 0px;
+        transform: translateX(-20px); 
+        position:absolute;
+        width: 110px;
+        
+        
+
+    }
+    .logo img{
+        width: 100px;
+    }
+    .entrada{
+        position: absolute;
+        left: 16px;
+        top: 152px;
+        right: 16px;
+        
+       
+       
+        
+    }
+    .entrada textarea{
+        width: 343px;
+        height: 188px;
+        
+    }
+    
+    .botonesyerror{
+        position: absolute;
+        display: block;       
+        transform: translate(0px,350px);
+        width: 100%;
+        align-items: flex-start;
+    }
+    h4 img{
+
+        width: 10px;
+        height: 10px;
+        transform: translate(28px,23px);
+    }
+    
+    #error{
+
+        width: 205px;
+        height: 18px;
+        transform: translate(40px, 10px);
+      
+    }
+    
+    .Encriptar{
+        margin-top: 0px;
+        width: 343px;
+        height: 67px;
+        position:absolute;
+        left: 15px;
+        align-self: stretch;
+    }
+    .Desencriptar {
+        margin-top: 90px;
+        left: 15px;
+        margin-bottom: 0px;
+        width: 343px;
+        height: 67px;
+        margin-left: 0px;
+        position: absolute;
+        align-self: stretch;
+    }
+    .salida:not(#resultado){
+        position: absolute;
+        overflow: auto;
+        width: 347px;
+        height: 300px;
+        max-height: 950px;
+        left: 15px;
+        top: 0px;
+        transform: translateY(590px);
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        align-items: flex-start;
+        
+        
+        
+    }
+    
+    #muneco{
+        display: none;
+    }
+
+    #texto1{
+        top: 110px;
+        left: 35px;
+        right: 0px;
+    }
+    #texto2{
+        top: 150px;
+        left: 35px;
+        right: 0px;
+    }
+    #copiar{
+    
+        
+        position: absolute;
+        transform: translate(0,200px);
+        width: 343px;
+        height: 67px;
+        
+    }
+     footer{
+        width: 100%;
+        position: absolute;
+        transform: translate(0,1015px);
+        
+    }
+}

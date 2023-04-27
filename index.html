@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset="UTF = 8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="icon" href = "imagenes/encriptado.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        
+    </head>
+    <body> 
+        <script src="script.js"></script>
+        <header>
+            <div class="logo">   
+                <h1><img src="imagenes/Logo-2.png"></h1>
+            </div>
+        </header>
+        <main>
+            <div class="entrada">
+                <h2><textarea name="cliente" id="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aqui"  autocomplete="off" oninput="validartexto()"></textarea></h2>                 
+            </div>
+            <div class="salida">
+                <h3><img src="imagenes/Muñeco.png" id="muneco">
+                    <p id="texto1">Ningún mensaje fue encontrado</p><p id="texto2">Ingresa el texto que deseas encriptar o desencriptar</p><p id="resultado"></p>     
+                </h3>
+            </div>
+            <div class="botonesyerror">          
+                <h4><img src="imagenes/bi_exclamation-circle-fill.png"><p id="error">Solo letras minúsculas y sin acentos</p></h4><br>
+                    <ul class="botones">
+                        <li><button onclick = "encriptarTexto()" class="Encriptar">Encriptar</button></li>
+                        <li><button onclick="desencriptarTexto()" class="Desencriptar">Desencriptar</button></li>
+                        <li><button onclick="copiar()" id ="copiar">Copiar</button></li>
+                </ul>
+            </div>
+        </main>
+                <footer>
+                    <div class="datos">
+                    <p id="brian">© Copyright Brian Diaz - 2023</p>
+                    <a href="https://linkedin.com/in/brianodz" id="linkedin"><img src="imagenes/—Pngtree—linkedin png icon design elements_3562011.png"></a> 
+                    <a href="https://github.com/TeslaXZ/" id="github"><img src="imagenes/—Pngtree—github logo icon_8630451.png"></a>
+                    </div>
+            </footer>
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
