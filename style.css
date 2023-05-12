@@ -1,14 +1,27 @@
-html{
 
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
     background-color: #F3F5FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "inter" sans-serif;
+    padding: 0;
+    margin: 0;
     
 }
-
 .logo{
-    
+    position: absolute;
     width: 120px;
     height: 90px;
-    position: absolute;
+    left: 10px;
     top: 0;
     bottom: 10px;
     padding : 40px 0 0 20px
@@ -20,20 +33,26 @@ html{
     width: 80px;
 }
 
+main{
+    margin-bottom: 700px;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 .entrada{
 
     position: absolute;
     width: 300px;
     height: 200px;
-    left: 100px;
+    left: 200px;
     top: 168px;
 }
 
 .entrada textarea{
-
-    display: inline-block;
-    background: #F3F5FC;
+    background: none;
     font-style: normal;
     font-family: 'Inter';
     font-weight: 400px;
@@ -43,8 +62,8 @@ html{
     border: none;
     outline: none;
     resize: none;
-    text-align: left;
-    scrollbar-width: none;
+    text-align: left;   
+    
 }
 
 ::placeholder{
@@ -57,22 +76,16 @@ html{
 
 .salida{
 
-    overflow: scroll;
-    scrollbar-width : none;
-    overflow-x: hidden;
-    overflow-y: hidden;
     word-wrap: break-word;
     position: absolute;
     width: 280px;
     height: 480px;
     max-height: 650px;
-    left: 730px;
+    left: 930px;
     top: 30px;
     border-radius: 32px;
     background-color:rgb(255, 255, 255);
-   
-    
-    
+    overflow: scroll;
 
 }
 
@@ -139,15 +152,14 @@ html{
 }
 
 .botonesyerror{
-
-    transform: translate(100px,450px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
     position:absolute;
+    gap: 8px;
+    top: 450px;
+    left: 200px;
     width: 520px;
     height: 120px;
+    margin-top: 5px;
+
     
 }
 
@@ -161,7 +173,7 @@ h4 img{
 
     width: 10px;
     height: 10px;
-    transform: translate(20px,7px);
+    transform: translate(20px,38px);
     
 }
 
@@ -169,7 +181,7 @@ h4 img{
 
     width: 300px;
     height: 20px;
-    transform: translate(35px, -5px);
+    transform: translate(35px, 25px);
     font-family: 'Inter';
     font-style: normal;
     font-size: 10px;
@@ -245,9 +257,8 @@ h4 img{
     
     display: none;
     position: absolute;
-    transform: translate(630px,-310px);
-    top: 380px;
-    left: 15px;
+    margin-top: 10px;
+    left: 745px;
     width: 250px;
     height: 50px;
     background:#F3F5FC;
@@ -276,16 +287,18 @@ h4 img{
 }
 
 footer{
-
-    display: initial;
     position: absolute;
     width: 100%;
-    height: 15%;
-    transform: translate(0,600px);
-    background: url(imagenes/fondo-papel-reciclado-azul.jpg);
+    height: auto;
+    bottom: 0;
+    left: 0;
     text-align: center;
+    background: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
     padding-top: 15px;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #brian{
@@ -326,11 +339,16 @@ a img{
     width: 80px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
 
     
     main{
+        flex-direction: column;
         align-items: center;
+        width: 92%;
+        position: absolute;
+        top: -50px;
+        left: 0;
     }
     .logo{
         padding: 20px 0 0 0px;
@@ -349,23 +367,25 @@ a img{
         left: 16px;
         top: 152px;
         right: 16px;
+        width: 100%;
+        
         
        
        
         
     }
     .entrada textarea{
-        width: 343px;
+        width: 100%;
         height: 188px;
+        
         
     }
     
     .botonesyerror{
-        position: absolute;
-        display: block;       
-        transform: translate(0px,350px);
+        position: absolute; 
         width: 100%;
-        align-items: flex-start;
+        left: 0;
+        top: 330px;
     }
     h4 img{
 
@@ -384,67 +404,72 @@ a img{
     
     .Encriptar{
         margin-top: 0px;
-        width: 343px;
+        width: 100%;
         height: 67px;
         position:absolute;
         left: 15px;
         align-self: stretch;
     }
     .Desencriptar {
-        margin-top: 90px;
+        margin-top: 80px;
         left: 15px;
         margin-bottom: 0px;
-        width: 343px;
+        width: 100%;
         height: 67px;
         margin-left: 0px;
         position: absolute;
         align-self: stretch;
     }
-    .salida:not(#resultado){
+    .salida {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         overflow: auto;
-        width: 347px;
+        width: 100%;
         height: 300px;
-        max-height: 950px;
         left: 15px;
-        top: 0px;
-        transform: translateY(590px);
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
-        align-items: flex-start;
+        top: 550px;
         
         
         
+
     }
     
     #muneco{
         display: none;
     }
 
-    #texto1{
-        top: 110px;
-        left: 35px;
-        right: 0px;
+      #texto1{
+        top: 10px;
+       
     }
     #texto2{
-        top: 150px;
-        left: 35px;
-        right: 0px;
+        top: 10px;
+       
+    }  
+    #resultado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 90%;
+        
+        
     }
     #copiar{
     
-        
+    
         position: absolute;
-        transform: translate(0,200px);
-        width: 343px;
-        height: 67px;
-        
-    }
-     footer{
         width: 100%;
+        height: 67px;
+        left: 15px;
+        top: 520px ;
+    }
+
+    footer{
         position: absolute;
-        transform: translate(0,1015px);
-        
+        height: 100px;
+        top: 900px;
     }
 }
