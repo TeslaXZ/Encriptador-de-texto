@@ -1,20 +1,14 @@
-
-html{
-    height: 100%;
-}
 body{
     position: relative;
-    box-sizing: border-box;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: #F3F5FC;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     font-family: "inter" sans-serif;
-    padding: 0;
-    margin: 0;
     
 }
 .logo{
@@ -34,8 +28,8 @@ body{
 }
 
 main{
-    margin-bottom: 700px;
-    
+    display: flex;
+    margin-bottom: 690px;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -289,25 +283,24 @@ h4 img{
 footer{
     position: absolute;
     width: 100%;
-    height: auto;
-    bottom: 0;
-    left: 0;
-    text-align: center;
+    height: 17.5vh;
     background: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
     padding-top: 15px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+    bottom: 0px;
+    
     
 }
 
 #brian{
-
-    position: relative;
     font-family:'Inter';
     font-weight: 700;
     font-size: 12px;
-    line-height: 150%;
+    
     color: #495057;
    
 
@@ -315,28 +308,26 @@ footer{
 a img{
     
     max-height: 100%;
-    max-width: 100%;  
-    object-fit: contain;
+    max-width: 100%;
+    
+    
     
 }
 
 #linkedin{
-
-    display: inline-block;
-    position: relative;
     width: 40px;
     height: 40px;
-    bottom: 19px;
+    margin-right: -12px;
+    
+  
 
 
 }
 
 #github{
-
-    display: inline-block;
-    position: relative;
     height: 80px;
     width: 80px;
+    
 }
 
 @media screen and (max-width:600px) {
@@ -355,9 +346,6 @@ a img{
         transform: translateX(-20px); 
         position:absolute;
         width: 110px;
-        
-        
-
     }
     .logo img{
         width: 100px;
@@ -368,17 +356,11 @@ a img{
         top: 152px;
         right: 16px;
         width: 100%;
-        
-        
-       
-       
-        
+    
     }
     .entrada textarea{
         width: 100%;
         height: 188px;
-        
-        
     }
     
     .botonesyerror{
@@ -430,9 +412,6 @@ a img{
         height: 300px;
         left: 15px;
         top: 550px;
-        
-        
-        
 
     }
     
@@ -449,17 +428,15 @@ a img{
        
     }  
     #resultado{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    width: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        width: 90%;
         
         
     }
     #copiar{
-    
-    
         position: absolute;
         width: 100%;
         height: 67px;
@@ -469,7 +446,6 @@ a img{
 
     footer{
         position: absolute;
-        height: 110px;
-        top: 900px;
+        top: 890px
     }
 }
