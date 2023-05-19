@@ -187,32 +187,38 @@ main{
 }
 
 h4{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%
 
-width: 300px;
 
 
 } 
 h4 img{
-
+    position: absolute;
     width: 10px;
     height: 10px;
-    transform: translate(20px,38px);
+    left: 10px;
+    top: -10px;
     
 }
 
 #error{
-
-    width: 300px;
+    position: absolute;
+    width: 400px;
     height: 20px;
-    transform: translate(35px, 25px);
     font-family: 'Inter';
     font-style: normal;
     font-size: 10px;
     color: #616970;
     opacity:0.8;
     letter-spacing: normal;
-    left: 0px;
-    margin-bottom: 0px;
+    top: -10px;
+    left: 25px;
+    
 }
 
 .Encriptar {
@@ -406,18 +412,19 @@ a img{
         left: 0;
         top: 330px;
     }
-    h4 img{
 
+    h4 img{
+        left: 29px;
         width: 10px;
         height: 10px;
-        transform: translate(28px,23px);
+        
     }
     
     #error{
-
-        width: 205px;
+        left: 40px;
+        width: 92%;
         height: 18px;
-        transform: translate(40px, 10px);
+        
       
     }
     
