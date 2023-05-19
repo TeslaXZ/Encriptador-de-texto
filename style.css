@@ -1,35 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "inter" sans-serif;
+
+   
+}
 body{
     position: relative;
     width: 100%;
     min-height: 100vh;
     background-color: #F3F5FC;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    font-family: "inter" sans-serif;
+    margin-right: 100px;
+    align-self: center;
+    
+}
+
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    left: 80px;
+    top: 50px;
+
+    
+    
     
 }
 .logo{
     position: absolute;
-    width: 120px;
-    height: 90px;
-    left: 10px;
-    top: 0;
-    bottom: 10px;
-    padding : 40px 0 0 20px
+    left: -80px;
+    
+ 
+    
+
+
+
     
 }
 
 .logo img{
-
     width: 80px;
 }
 
 main{
+    position: relative;
     display: flex;
-    margin-bottom: 690px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 110px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh; 
+    top: -45px;
+   
+    
 }
 ::-webkit-scrollbar {
     display: none;
@@ -41,8 +71,8 @@ main{
     position: absolute;
     width: 300px;
     height: 200px;
-    left: 200px;
-    top: 168px;
+    left: 100px;
+    top: 160px;
 }
 
 .entrada textarea{
@@ -75,8 +105,8 @@ main{
     width: 280px;
     height: 480px;
     max-height: 650px;
-    left: 930px;
-    top: 30px;
+    left: 850px;
+    top: 90px;
     border-radius: 32px;
     background-color:rgb(255, 255, 255);
     overflow: scroll;
@@ -147,12 +177,11 @@ main{
 
 .botonesyerror{
     position:absolute;
-    gap: 8px;
-    top: 450px;
-    left: 200px;
-    width: 520px;
+    top: 520px;
+    left: 100px;
+    width: 100%;
     height: 120px;
-    margin-top: 5px;
+
 
     
 }
@@ -188,7 +217,6 @@ h4 img{
 
 .Encriptar {
    
-    margin-top: 10px;
     width: 250px;
     height: 50px;
     background: #0A3871;
@@ -200,7 +228,7 @@ h4 img{
     color: white;
     position:absolute;
     left: 0px;
-     
+   
 }
 
 .Encriptar:hover{
@@ -219,9 +247,9 @@ h4 img{
 
 .Desencriptar {
    
-    margin-top: 10px;
+   
     left: 250px;
-    margin-bottom: 40px;
+    
     gap: 8px;
     width: 250px;
     height: 50px;
@@ -249,10 +277,9 @@ h4 img{
 
 #copiar{
     
-    display: none;
+    display: show;
     position: absolute;
-    margin-top: 10px;
-    left: 745px;
+    left: 765px;
     width: 250px;
     height: 50px;
     background:#F3F5FC;
@@ -283,15 +310,14 @@ h4 img{
 footer{
     position: absolute;
     width: 100%;
-    height: 17.5vh;
-    background: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
-    padding-top: 15px;
-    box-sizing: border-box;
+    height: 110px;
+    /* background: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
+    align-self: center;
     
     
 }
@@ -330,16 +356,25 @@ a img{
     
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:850px) {
 
-    
+    html{
+        width: 92%;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
     main{
         flex-direction: column;
         align-items: center;
-        width: 92%;
+        justify-content: center;
+        width: 100%;
         position: absolute;
-        top: -50px;
-        left: 0;
+        top: -15px;
+        align-self: center;
+        
     }
     .logo{
         padding: 20px 0 0 0px;
@@ -446,6 +481,7 @@ a img{
 
     footer{
         position: absolute;
-        top: 890px
+        top: 890px;
+        left: 25px;
     }
 }
