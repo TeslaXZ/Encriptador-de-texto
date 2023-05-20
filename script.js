@@ -12,7 +12,7 @@ function encriptarTexto(){
     let entrada =  document.getElementById("areatexto").value;
     const salida = document.getElementById("resultado");
 
-    if(/[áéíóúÁÉÍÓÚ]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
+    if(/[áéíóúÁÉÍÓÚ_]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
         
     }
     else if(entrada == ""){
@@ -28,7 +28,7 @@ function desencriptarTexto(){
         
     let entrada =  document.getElementById("areatexto").value;
     let salida = document.getElementById("resultado");
-    if(/[áéíóúÁÉÍÓÚ]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
+    if(/[áéíóúÁÉÍÓÚ_]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
         
     }
     else if(entrada == ""){
@@ -57,7 +57,7 @@ function validartexto(){
         error.style.color = "#616970"
         error.style.fontSize = "10px"
     }
-    else if(/[áéíóúÁÉÍÓÚ]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
+    else if(/[áéíóúÁÉÍÓÚ_]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
 
         error.style.color = "red"
         error.style.fontSize = "11px"
