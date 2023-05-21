@@ -48,7 +48,7 @@ function copiar(){
     document.getElementById("areatexto").value = "";
 
 }
-//funcio que valida el texto si el usuario ingresa mayusculas, palabras con acento o caracteres especiales. En caso de ser asi el mensaje inicial pasara a ser rojo y se hara mas grande 
+//funcion que valida el texto si el usuario ingresa mayusculas, palabras con acento o caracteres especiales. En caso de ser asi el mensaje inicial pasara a ser rojo y se hara mas grande 
 function validartexto(){
 
     let entrada =  document.getElementById("areatexto").value;
