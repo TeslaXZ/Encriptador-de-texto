@@ -10,7 +10,7 @@ function salidaFinal(){
 function encriptarTexto(){
         
     let entrada =  document.getElementById("areatexto").value;
-    const salida = document.getElementById("resultado");
+    let salida = document.getElementById("resultado");
 
     if(/[áéíóúÁÉÍÓÚ_]/.test(entrada)||entrada.toLowerCase() != entrada || /[^\w\s]/.test(entrada)){
         
@@ -43,7 +43,7 @@ function desencriptarTexto(){
 
 function copiar(){
 
-    let salida = document.getElementById("resultado").value
+    let salida = document.getElementById("resultado").innerText
     navigator.clipboard.writeText(salida)
     document.getElementById("areatexto").value = "";
 
